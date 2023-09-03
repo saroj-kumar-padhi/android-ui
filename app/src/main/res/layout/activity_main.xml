@@ -7,19 +7,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
     <include
         layout="@layout/appbar" />
-
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tab"
         android:layout_width="match_parent"
+        android:background="#4E496A"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#DCD4D4"
         android:layout_height="wrap_content">
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Individual" />
+            android:text="Individual"
+            />
 
         <com.google.android.material.tabs.TabItem
             android:layout_width="wrap_content"
@@ -31,10 +33,9 @@
             android:layout_height="wrap_content"
             android:text="Merchants" />
     </com.google.android.material.tabs.TabLayout>
-
     <androidx.appcompat.widget.SearchView
         android:layout_width="match_parent"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginHorizontal="20dp"
         android:layout_height="35dp"
         app:queryHint="Search"
@@ -44,11 +45,11 @@
         android:id="@+id/searchView" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp "
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:id="@+id/recyclerContect" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"

@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Search Icon (Left Side) -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/outline_notifications_active_24"
+        app:showAsAction="always"
+        android:title="Search"/>
+
+    <!-- Bell Icon (Right Side) -->
+
+
+</menu>

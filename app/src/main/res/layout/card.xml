@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:elevation="300dp"
+        android:paddingHorizontal="50dp"
+        app:cardUseCompatPadding="true"
+        >
+
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:id="@+id/img"
+                   android:layout_width="120dp"
+                   android:layout_height="120dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="60dp"
+                   android:elevation="50dp"
+                   android:foreground="@drawable/some_foreground"
+
+                   android:src="@drawable/ic_launcher_background"
+                   />
+               <androidx.cardview.widget.CardView
+                   android:layout_width="347dp"
+                   android:layout_height="wrap_content"
+                   android:elevation="100dp"
+                   android:layout_marginLeft="80dp"
+                   >
+                   <RelativeLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="30dp"
+                       tools:context=".MainActivity">
+                       <TextView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="140dp"
+                           android:layout_marginTop="30dp"
+                           android:text="+ INVITE"
+                           android:textColor="#092C2C"
+                           android:textSize="18dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/marphy1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginTop="70dp"
+                           android:text="Michael Murphy"
+                           android:textColor="#114C53"
+                           android:textSize="22dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/marp1"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@id/marphy1"
+                           android:layout_marginLeft="30dp"
+                           android:text="San Francisco "
+                           android:textColor="#114C53"
+                           android:textSize="20dp" />
+
+                       <ProgressBar
+                           android:id="@+id/pb1"
+                           style="@android:style/Widget.ProgressBar.Horizontal"
+                           android:layout_width="140dp"
+                           android:layout_height="10dp"
+                           android:layout_below="@+id/marp1"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginTop="5dp"
+                           android:progress="50"
+                           android:progressTint="#114213"
+
+                           />
+
+                       <TextView
+                           android:id="@+id/marp2"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_marginLeft="30dp"
+                           android:layout_marginTop="140dp"
+                           android:text="Friendship | Coffee | Hangout"
+                           android:textColor="#114C53"
+                           android:textSize="22dp"
+                           android:textStyle="bold" />
+
+                       <TextView
+                           android:id="@+id/marp3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_below="@+id/marp2"
+                           android:layout_marginLeft="30dp"
+                           android:text="Hi Communit of connections."
+                           android:textColor="#114C53"
+                           android:textSize="20dp" />
+
+                   </RelativeLayout>
+               </androidx.cardview.widget.CardView>
+           </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

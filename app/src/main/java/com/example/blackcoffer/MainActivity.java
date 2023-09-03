@@ -44,14 +44,16 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar); // Set the toolbar as the action bar
 
         arr.add(new model(R.drawable.img, "Michael Murphy", "San Francisco"));
-        arr.add(new model(R.drawable.img, "John Doe", "San Francisco"));
-        arr.add(new model(R.drawable.img, "Jennifer", "San Francisco"));
+        arr.add(new model(R.drawable.first, "John Doe", "San Francisco"));
+        arr.add(new model(R.drawable.third, "Jennifer", "San Francisco"));
+
         arr.add(new model(R.drawable.img, "Michael Murphy", "San Francisco"));
-        arr.add(new model(R.drawable.img, "John Doe", "San Francisco"));
-        arr.add(new model(R.drawable.img, "Jennifer", "San Francisco"));
+        arr.add(new model(R.drawable.first, "John Doe", "San Francisco"));
+        arr.add(new model(R.drawable.third, "Jennifer", "San Francisco"));
+
         arr.add(new model(R.drawable.img, "Michael Murphy", "San Francisco"));
-        arr.add(new model(R.drawable.img, "John Doe", "San Francisco"));
-        arr.add(new model(R.drawable.img, "Jennifer", "San Francisco"));
+        arr.add(new model(R.drawable.first, "John Doe", "San Francisco"));
+        arr.add(new model(R.drawable.third, "Jennifer", "San Francisco"));
 
         recyclerAdpater adapter = new recyclerAdpater(this, arr);
         recyclerView.setAdapter(adapter);
